@@ -8,5 +8,5 @@ weights = [[0.2,0.8,-0.5,1],
 biases = [2, 3, 0.5]
 
 
-output = np.dot(weights,inputs) + biases
+output = np.dot(inputs,np.array(weights).T) + biases
 print(output)
